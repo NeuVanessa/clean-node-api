@@ -6,17 +6,30 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NeuVanessa/clean-node-api.git"
   },
-  "author": "",
+  "author": "Vanessa Lopes",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NeuVanessa/clean-node-api/issues"
   },
   "homepage": "https://github.com/NeuVanessa/clean-node-api#readme",
   "devDependencies": {
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
     "standard": "^16.0.4"
   }
 }
