@@ -20,6 +20,10 @@ npx standard
 
 # npx lint-staged
 
-# Husky BIBLIOTCA 2
+# Husky BIBLIOTCA 3
 
 # Antes de enviar um commit o husky faz a verificação e verá se tá tudo ok, esse verificação entra em sintonia com o lint-staged, se tive ok ele passa e envia as informações para o git.
+
+# jest BIBLIOTCA 4
+
+# responsável por fazer testes
